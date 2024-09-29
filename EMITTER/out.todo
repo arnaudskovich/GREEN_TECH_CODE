@@ -1,0 +1,7 @@
+- Lire température et humidité ======================= FAIT
+- Lire la concentration pour chaque gaz ============== FAIT
+- Lire la concentration pour tous les gaz ============ FAIT
+- Recueillir la position du module =================== FAIT - EN ATTENTE D'ANTENNE
+- Définir la forme des messages ====================== FAIT
+- Envoyer les données par LoRa (une seule fonction) == FAIT
+- Recevoir des commandes du récepteur ================ FAIT

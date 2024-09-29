@@ -1,0 +1,6 @@
+{
+    "device_id": "emitter_001",
+    "type": "emitter",
+    "expected_position": {"lat": 12.34, "lon": 56.78},
+    "actual_position": {"lat": 12.36, "lon": 56.79}
+}

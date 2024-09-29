@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Air Virgil Dashboard</title>
+    <script src="/static/js/chart.js"></script>
+    <script src="static/js/refresh.js"></script>
+    <link rel="stylesheet" href="/static/css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Air Virgil Dashboard</h1>
+        <p id="current-date-time"></p>
+      </header>
+
+      <section class="controls">
+        <div class="dropdowns">
+          <!-- Sélection de la ville -->
+          <div class="dropdown">
+            <label for="location">Select Location:</label>
+            <select id="location">
+              <option value="all" selected>All cities</option>
+              
+              <option value="City 1">City 1</option>
+              
+              <option value="City 2">City 2</option>
+              
+            </select>
+          </div>
+
+          <!-- Sélection du taux de rafraîchissement -->
+          <div class="dropdown">
+            <label for="refreshRate">Temps de rafraichissement</label>
+            <select id="refreshRate">
+              <option value="1000" selected>1s</option>
+              <option value="3000">3s</option>
+              <option value="5000">5s</option>
+              <option value="10000">10s</option>
+              <option value="30000">30s</option>
+              <option value="60000">1 min</option>
+              <option value="120000">2 min</option>
+              <option value="300000">5 min</option>
+            </select>
+          </div>
+
+          <!-- Sélection du gaz -->
+          <!-- <div class="dropdown">
+            <label for="gas">Select Gas:</label>
+            <select id="gas">
+              <option value="all" selected>All Gases</option>
+              <option value="CO2">CO₂</option>
+              <option value="Methane">Methane (CH₄)</option>
+              <option value="Nitrogen">Nitrogen (N₂)</option>
+              <option value="Oxygen">Oxygen (O₂)</option>
+              <option value="PM2.5">PM2.5</option>
+              <option value="PM10">PM10</option>
+              <option value="Sulfur">Sulfur Dioxide (SO₂)</option>
+              <option value="Ozone">Ozone (O₃)</option>
+            </select>
+          </div> -->
+        </div>
+      </section>
+
+      <section class="data-display">
+        <!-- Cartes avec graphiques -->
+        <div class="card">
+          <h2>CO</h2>
+          <canvas id="CO-chart"></canvas>
+        </div>
+        <div class="card">
+          <h2>C02</h2>
+          <canvas id="CO2-chart"></canvas>
+        </div>
+        <div class="card">
+          <h2>ALCOHOL</h2>
+          <canvas id="AL-chart"></canvas>
+        </div>
+        <div class="card">
+          <h2>TOLUENE</h2>
+          <canvas id="TLN-chart"></canvas>
+        </div>
+        <div class="card">
+          <h2>NH4</h2>
+          <canvas id="NH4-chart"></canvas>
+        </div>
+        <div class="card">
+          <h2>ACETONE</h2>
+          <canvas id="ACT-chart"></canvas>
+        </div>
+      </section>
+      <!-- 
+      <section class="card card-graph">
+        <h2>All Gas Levels</h2>
+        <canvas id="all-gases-chart"></canvas>
+        
+      </section> -->
+
+      <footer>
+        <p class="green-tech">Powered by <span>Green_tech_innovators</span></p>
+      </footer>
+    </div>
+  </body>
+  <script src="/static/js/utility.js"></script>
+  <script src="/static/js/main.js" defer></script>
+</html>

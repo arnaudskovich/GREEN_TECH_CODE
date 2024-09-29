@@ -1,0 +1,12 @@
+AIR_VIGIL_E:::1::CO2 // one gas
+AIR_VIGIL_E:::2 // all gas
+AIR_VIGIL_E:::3 // temperature
+AIR_VIGIL_E:::4 // position
+AIR_VIGIL_E:::5 // date
+AIR_VIGIL_E:::6 // position_and_date
+AIR_VIGIL_E:::7 // auto_send
+AIR_VIGIL_E:::7::1
+AIR_VIGIL_E:::7::0
+AIR_VIGIL_E:::8 // delay between data
+AIR_VIGIL_E:::8::5000
+AIR_VIGIL_E:::9

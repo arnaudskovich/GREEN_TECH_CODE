@@ -1,0 +1,1 @@
+void printAsTable(void *data, int cols, int rows);
